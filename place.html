@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="Bruno Martin Ssematimba | WDD 131 - Country Place">
+    <meta name="author" content="Bruno Martin">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto:wght@100;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Tanzania</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/image.webp" media="(min-width: 768px)">
+                <source srcset="images/tanzania.webp" media="(min-width: 480px)">
+                <img src="imags/image.webp" alt="Hero image of the place">
+            </picture>
+        </div>
+
+        <div class="content">
+            <div class="data">
+                <h2><span>Data</span></h2>
+                <p><strong>Area:</strong> 243,610km²</p>
+                <p><strong>Population:</strong> 61,498,437</p>
+                <p><strong>Capital:</strong> Dar-es_Salaam</p>
+                <p><strong>Languages:</strong>Kiswahili (Official), English (Official)</p>
+                <p><strong>Currency:</strong> Tanzanian Shilings</p>
+                <p><strong>Time Zone:</strong> East Africa Time (EAT, UTC+3)</p>
+                <p><strong>Calling Code:</strong> +255</p>
+                <p><strong>Internet TLD:</strong> .tz</p>
+            </div>
+
+            <div class="weather">
+                <h2 id="weather-title">Weather</h2>
+                <img src="images/icon.svg" width="70" alt="weather icon" class="weather-icon">
+                <p>Conditions: <span id="conditions">loading...</span></p>
+                <p>Temperature: <span id="temperature">10</span>°C</p>
+                <p>Wind: <span id="wind-speed">5</span> km/h</p>
+                <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span>Bruno Martin Ssematimba</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
