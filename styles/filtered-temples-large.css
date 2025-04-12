@@ -1,29 +1,33 @@
-
 @media (min-width: 768px) {
     .header-container {
-        flex-direction: row;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
     }
 
+    
     #hamburger {
         display: none;
     }
 
-  
+ 
     #nav-menu {
         display: flex !important;
         flex-direction: row;
         gap: 1rem;
-        margin-top: 0;
+        position: static;
+        width: auto;
+        padding: 0;
     }
 
- 
+   
+    .nav-container {
+        margin-right: 0;
+    }
+
     main {
         max-width: 1200px;
     }
 
-    
     main>div {
         grid-template-columns: repeat(3, 1fr);
     }

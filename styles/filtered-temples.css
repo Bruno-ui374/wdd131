@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto Flex', 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    background-color: #4B0082;
+    color: #ffffff;
+    padding: 1rem;
+    position: relative;
+}
+
+/* Container for the header with the logo on left and nav on right */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling for the heading */
+.header-container h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    margin: 0;
+}
+
+/* A new container for the hamburger and navigation links */
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Hamburger styling */
+#hamburger {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ffffff;
+    display: block;
+    margin-right: 1rem;
+}
+
+/* Nav menu styling */
+#nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #4B0082;
+    padding: 1rem 0;
+}
+
+#nav-menu.active {
+    display: flex;
+}
+
+#nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#nav-menu a:hover {
+    background-color: #9932CC;
+    border-radius: 4px;
+}
+
+/* Main Container */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main>div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.temple-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+}
+
+.temple-card h2 {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #4B0082;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}

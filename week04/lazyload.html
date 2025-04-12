@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Lazy Loading </title>
+    <meta name="author" content="Ssematimba Bruno Martin">
+    <meta name="description" content="This is a simple HTML page demonstrating lazy loading of images using the loading attribute.">
+    <link href="styles/lazyload.css" rel="stylesheet">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Lazy Loading</h1>
+        <img src="//picsum.photos/400/600/" alt="picture" loading="lazy" width="400" height="600">
+        <img src="//picsum.photos/400/750/" alt="picture" loading="lazy" width="400" height="600">
+        <img src="//picsum.photos/400/630/" alt="picture" loading="lazy" width="400" height="600">
+        <img src="//picsum.photos/400/700/" alt="picture" loading="lazy" width="400" height="600">
+        <img src="//picsum.photos/400/650" alt="picture" loading="lazy" width="400" height="600">
+        <img src="//picsum.photos/400/800/" alt="picture" loading="lazy" width="400" height="600">
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span>Bruno Martin Ssematimba</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
