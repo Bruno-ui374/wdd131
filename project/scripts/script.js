@@ -7,7 +7,7 @@ menuToggle.addEventListener('click', () =>
     navLinks.classList.toggle('active');
 });
 
-// Header Scroll Effect
+
 const header = document.querySelector('header');
 
 window.addEventListener('scroll', () =>
