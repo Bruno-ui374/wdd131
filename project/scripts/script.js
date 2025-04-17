@@ -1,4 +1,4 @@
-// Menu Toggle
+
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
@@ -22,7 +22,7 @@ window.addEventListener('scroll', () =>
     }
 });
 
-// Scroll Animation
+
 const fadeElements = document.querySelectorAll('.fade-in');
 
 const fadeIn = () =>
@@ -42,7 +42,7 @@ const fadeIn = () =>
 window.addEventListener('scroll', fadeIn);
 window.addEventListener('load', fadeIn);
 
-// Category Nav
+
 const categoryBtns = document.querySelectorAll('.category-btn');
 
 categoryBtns.forEach(btn =>

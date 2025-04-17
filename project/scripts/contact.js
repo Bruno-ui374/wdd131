@@ -1,4 +1,4 @@
-// === Existing menu + scroll + fade logic ===
+
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
@@ -15,9 +15,9 @@ const fadeIn = () => fadeElements.forEach(el => {
 window.addEventListener('scroll', fadeIn);
 window.addEventListener('load', fadeIn);
 
-// === New Dynamic Sections ===
+
 document.addEventListener('DOMContentLoaded', () => {
-    // 1) Book Appointment
+  
     const bookBtn = document.getElementById('book-btn');
     bookBtn.addEventListener('click', handleBooking);
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert(`Appointment booked at ${timestamp}`);
     }
 
-    // 2) Gallery Modal
+    
     const galleryImgs = document.querySelectorAll('.gallery-grid img');
     const modal = createModal();
     galleryImgs.forEach(img => img.addEventListener('click', () => openModal(img.src)));
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.classList.add('open');
     }
 
-    // 3) Testimonials Slider
+    
     const testimonials = [
         { text: 'Great service and impeccable quality.', author: 'Ian Galiwango' },
         { text: 'My suit fits like a dream—highly recommended!', author: 'Bruno Martin' },
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     next.addEventListener('click', () => showTestimonial(idx + 1));
     showTestimonial(0);
 
-    // 4) Contact Form → localStorage
+    
     const contactForm = document.getElementById('contact-form');
     contactForm.addEventListener('submit', handleContact);
 

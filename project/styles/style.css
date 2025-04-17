@@ -534,7 +534,7 @@ footer {
     color: #fff;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 1024px) {
     .nav-links {
         gap: 20px;

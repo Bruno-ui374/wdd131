@@ -369,7 +369,7 @@ header.scrolled {
     border-radius: 50%;
 }
 
-/* === Testimonials === */
+
 .testimonials {
     background-color: #0a0a0a;
     color: #fff;
@@ -443,29 +443,9 @@ header.scrolled {
     color: #fff;
 }
 
-/* === Video Section === */
-.video-section {
-    padding: 0;
-    background-color: #121212;
-}
 
-.video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    height: 0;
-    overflow: hidden;
-}
 
-.video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
 
-/* === Contact Section === */
 .contact-section {
     display: flex;
     gap: 40px;
@@ -568,7 +548,7 @@ header.scrolled {
     color: #fff;
 }
 
-/* === Map === */
+
 .map-section {
     width: 100%;
     height: 450px;
@@ -677,7 +657,7 @@ footer {
     transform: translateY(0);
 }
 
-/* === Responsive Styles === */
+
 @media (max-width: 1200px) {
     .gallery-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -741,3 +721,4 @@ footer {
     .hero-title {
         font-size: 48px;
     }
+}
