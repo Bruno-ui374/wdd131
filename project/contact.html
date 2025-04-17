@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="description" content="Tailor-lab a custom suit tailoring company" />
+  <meta name="author" content="Ssematimba Bruno Martin" />
+  <meta name="keywords" content="Tailor Lab, Custom Suits, Tailoring, Fashion, Style" />
+  <title>Tailor Lab</title>
+
+  <link rel="stylesheet" href="styles/contact.css" />
+  <script src="scripts/contact.js" defer></script>
+</head>
+<body>
+  <header>
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Collections</a>
+      <a href="#">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="logo">
+      <svg width="150" height="40" viewBox="0 0 150 40">
+        <text x="75" y="30" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle"
+          fill="white">Tailor Lab</text>
+        <path d="M60 32 L75 18 L90 32" stroke="white" stroke-width="1" fill="none" />
+      </svg>
+    </div>
+    <div class="nav-icons">
+      <a href="index.html"><img src="images/home.svg" /><i class="fas fa-search"></i></a>
+      <a href="gallery.html"><img src="images/shopping.svg" /><i class="fas fa-user"></i></a>
+      <a href="contact.html"><img src="images/support.svg" /><i class="fas fa-user"></i></a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"><img src="images/contact1.webp" alt="Hero Image" class="hero-img" /></div>
+    <div class="hero-content">
+      <div class="hero-deer">&#x2927;</div>
+      <h1 class="hero-title">Contact Us</h1>
+      <p class="hero-subtitle">
+        Impressed by a certain design? You have one in mind? Reach out to us to book an appointment and we bring your
+        dream suit to life.
+      </p>
+      <a href="gallery.html" class="btn">OUR COLLECTION</a>
+    </div>
+  </section>
+
+  <!-- Info Cards: Working Hours & Appointment -->
+  <section id="info-cards" class="info-cards fade-in">
+    <div class="card working-hours-card">
+      <h2 class="card-title">Working Hours</h2>
+      <p class="card-description">Discover professional quality tailoring at convenient hours. We understand your busy schedule—simply drop by or call during our opening times.</p>
+      <table class="hours-table">
+        <tr><th>Monday – Friday:</th><td>9am – 5pm</td></tr>
+        <tr><th>Saturday:</th><td>9am – 2pm</td></tr>
+        <tr><th>Sunday:</th><td>Closed</td></tr>
+      </table>
+    </div>
+    <div class="card appointment-card">
+      <div class="phone-icon">
+        <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+        </svg>
+      </div>
+      <p class="phone-number">+256 763 367 927</p>
+      <p class="book-description">Book An Appointment</p>
+      <a href="#" id="book-btn" class="btn btn-appointment">Schedule Now</a>
+    </div>
+  </section>
+
+  <!-- Gallery of 8 Images -->
+  <section id="gallery" class="gallery fade-in">
+    <div class="section-heading">
+      <span class="subheading">Only The Best Materials</span>
+      <h2 class="section-title">Amazing Quality</h2>
+    </div>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+        <img src="images/one.webp" alt="Suit Detail" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+        <img src="images/trouser1.webp" alt="Suit Fitting" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+        <img src="images/threads.webp" alt="Custom Tailoring" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+        <img src="images/offer.webp" alt="Fabric Selection" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+        <img src="images/three.webp" alt="Suit Accessories" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+        <img src="images/arrival2.jpg" alt="Measurement Process" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+        <img src="images/contact2.webp" alt="Finished Product" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+        <img src="images/four.webp" alt="Tailoring Process" loading="lazy" />
+        </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Slider -->
+  <section id="testimonials" class="testimonials fade-in">
+    <h2 class="section-title">What They Say</h2>
+    <div class="testimonial-container">
+      <!-- Testimonial content will be inserted here by JavaScript -->
+    </div>
+    <div class="testimonial-buttons">
+      <button id="prev-btn">&#10094;</button>
+      <button id="next-btn">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Contact Form + Aside Info -->
+  <section id="contact-section" class="contact-section fade-in">
+    <div class="contact-form-wrapper">
+      <form id="contact-form">
+        <input type="text" id="name" name="name" placeholder="Name" required />
+        <input type="email" id="email" name="email" placeholder="Email" required />
+        <textarea id="message" name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="btn btn-send">Send Us A Message</button>
+      </form>
+    </div>
+    <aside class="contact-info">
+      <h2>Contact Us</h2>
+      <p>Reach out directly for any bespoke tailoring inquiries, collaborations, or to discuss your custom suit requirements.</p>
+      <ul class="contact-details">
+        <li class="contact-item">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </span>
+          <span>Email: <a href="mailto:info@tailorlab.com">info@tailorlab.com</a></span>
+        </li>
+        <li class="contact-item">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+            </svg>
+          </span>
+          <span>Phone: +256 763 367 927</span>
+        </li>
+        <li class="contact-item">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 12a11 11 0 11-22 0 11 11 0 0122 0z"></path>
+              <polyline points="17 8 12 16 9 13"></polyline>
+            </svg>
+          </span>
+          <span><a href="#" download>Charm Tower Kampala</a></span>
+        </li>
+      </ul>
+    </aside>
+  </section>
+
+  <!-- Full-Width Embedded Map -->
+  <section id="map-section" class="map-section">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7590152650027!2d32.58091547363025!3d0.31239749968453495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc7e0efd3ec3%3A0xac3970f1b5d7e5c3!2sCham%20Towers!5e0!3m2!1sen!2sug!4v1744898992174!5m2!1sen!2sug"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer>
+    <div class="footer-logo">
+      <svg width="150" height="40" viewBox="0 0 150 40">
+        <text x="75" y="30" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle"
+          fill="white">Tailor Lab</text>
+        <path d="M60 32 L75 18 L90 32" stroke="white" stroke-width="1" fill="none" />
+      </svg>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Collections</a>
+      <a href="#">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="#"><img src="images/pinterest.png" alt="Pinterest" width="40" height="40" /></a>
+      <a href="#"><img src="images/tiktok.png" alt="Tiktok" width="45" height="45" /></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram" width="40" height="40" /></a>
+    </div>
+    <div class="footer-newsletter">
+      <h3>Get Our Newsletter</h3>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your Email Address" required>
+        <button type="submit" class="btn">SEND</button>
+      </form>
+    </div>
+    <p class="footer-text">Tailor Lab © 2025 All Rights Reserved by Bruno Martin Ssematimba</p>
+  </footer>
+</body>
+</html>
