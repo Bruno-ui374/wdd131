@@ -240,6 +240,7 @@ header.scrolled {
     padding: 0 40px;
     margin-bottom: 60px;
     justify-content: center;
+    align-items: center;
 }
 
 .product {
@@ -391,6 +392,7 @@ header.scrolled {
     padding: 40px;
     gap: 30px;
     justify-content: center;
+    align-items: center;
 }
 
 .clearance-item {
